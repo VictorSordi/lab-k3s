@@ -1,0 +1,9 @@
+mirrors:
+  docker.io:
+    endpoint:
+      - "http://192.168.56.7:8123"
+configs:
+  "192.168.56.7:8123":
+    auth:
+      username: jenkins
+      password: 123
