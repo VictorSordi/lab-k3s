@@ -24,7 +24,7 @@ spec:
             memory: "128Mi"
             cpu: "500m"
         ports:
-        - containerPort: 8081
+        - containerPort: 8080
 
 ---
 
@@ -37,8 +37,8 @@ spec:
   selector:
     app: dev-notes
   ports:
-  - port: 8081
-    targetPort: 8081
+  - port: 8070
+    targetPort: 8080
     name: tcp
 
 ---
@@ -61,4 +61,4 @@ spec:
           service:
             name: dev-notes
             port: 
-              number: 8081
+              number: 8070
