@@ -1,4 +1,9 @@
 
+curl -sfL https://get.k3s.io | sh 
+
+Adicionar mais nós:
+curl -sfL https://get.k3s.io | K3S_URL=https://myserver:6443 K3S_TOKEN=mynodetoken sh -
+
 apt install bash-completion -y
 apt install net-tools unzip -y
 
